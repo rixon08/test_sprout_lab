@@ -1,0 +1,2 @@
+C:/Project/test_sprout_lab/android/app/.cxx/Debug/l715s3u3/x86/CMakeFiles/edit_cache.dir
+C:/Project/test_sprout_lab/android/app/.cxx/Debug/l715s3u3/x86/CMakeFiles/rebuild_cache.dir

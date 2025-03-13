@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:test_sprout_lab/core/injection/injection.dart';
+import 'package:test_sprout_lab/features/list_pokemon/injection/list_pokemon_injection.dart';
+import 'package:test_sprout_lab/features/list_pokemon/presentation/pages/list_pokemon_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  initInjections();
   runApp(const MyApp());
 }
 
@@ -32,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: ListPokemonPage(),
     );
   }
 }

@@ -178,7 +178,7 @@ class ListPokemonPage extends StatelessWidget {
                                                             margin:
                                                                 const EdgeInsets
                                                                     .only(
-                                                                    top: 10),
+                                                                    top: 5),
                                                             padding:
                                                                 const EdgeInsets
                                                                     .symmetric(
@@ -236,10 +236,13 @@ class ListPokemonPage extends StatelessWidget {
                                                                       .cover,
                                                                 ),
                                                               )),
-                                                          SvgPicture.network(
-                                                              width: 70,
-                                                              height: 70,
-                                                              "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${_listPokemon[index].id}.svg")
+                                                          Hero(
+                                                            tag: _listPokemon[index].id.toString(),
+                                                            child: SvgPicture.network(
+                                                                width: 70,
+                                                                height: 70,
+                                                                "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${_listPokemon[index].id}.svg"),
+                                                          )
                                                         ],
                                                       ),
                                                     ),
